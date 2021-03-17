@@ -1,0 +1,37 @@
+<h2>Permissions: </h2>
+<table class="table">
+    <thead>
+    <th>Offer ID</th>
+    <th>MediaSource</th>
+    <th>Action</th>
+    <th><button ng-click="addPermission()">Add</button></th>
+    </thead>
+    <tbody>
+    <tr ng-repeat="permission in editedUser.permissions">
+        <td>
+            <div class="form-group">
+                <input type="text" ng-model="permission.offerId" class="form-control">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <input type="text" ng-model="permission.mediaSource" class="form-control">
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <select ng-model="permission.action" class="form-control">
+                    <option value="ALL">All</option>
+                    <option value="CREATE">Create</option>
+                    <option value="READ">Read</option>
+                    <option value="UPDATE">Update</option>
+                    <option value="DELETE">Delete</option>
+                </select>
+            </div>
+        </td>
+        <td>
+            <button ng-click="removePermission(permission)"></button>
+        </td>
+    </tr>
+    </tbody>
+</table>

@@ -1,0 +1,526 @@
+[
+    {
+        "name": "impression_time",
+        "type": "datetime",
+        "mandatory": false,
+        "aliases": [
+            "impression time"
+        ]
+    },
+    {
+        "name": "click_time",
+        "type": "datetime",
+        "mandatory": false,
+        "aliases": [
+            "click time"
+        ]
+    },
+    {
+        "name": "install_time",
+        "type": "datetime",
+        "mandatory": false,
+        "aliases": [
+            "install time"
+        ]
+    },
+    {
+        "name": "agency_pmd",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+            "agency/pmd (af_prt)",
+            "(af_prt)"
+        ]
+    },
+    {
+        "name": "media_source",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+            "media source (pid)",
+            "(pid)"
+        ]
+    },
+    {
+        "name": "channel",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+            "channel (af_channel)",
+            "(af_channel)"
+        ]
+    },
+    {
+        "name": "keywords",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+            "keywords (af_keywords)",
+            "(af_keywords)"
+        ]
+    },
+    {
+        "name": "campaign_name",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+            "campaign name (c)",
+            "campaign (c)"
+        ]
+    },
+    {
+        "name": "site_id",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+            "site id (af_siteid)",
+            "(af_siteid)"
+        ]
+    },
+    {
+        "name": "campaign_id",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+            "campaign id (af_c_id)",
+            "(af_c_id)"
+        ]
+    },
+    {
+        "name": "adset_name",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+            "adset name (af_adset)",
+            "(af_adset)"
+        ]
+    },
+    {
+        "name": "adset_id",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+            "adset id (af_adset_id)",
+            "(af_adset_id)"
+        ]
+    },
+    {
+        "name": "ad_name",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+            "ad name (af_ad)",
+            "af_ad"
+        ]
+    },
+    {
+        "name": "ad_id",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+            "ad id (af_ad_id)",
+            "(af_ad_id)"
+        ]
+    },
+    {
+        "name": "ad_type",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+            "ad type (af_ad_type)",
+            "(af_ad_type)"
+        ]
+    },
+    {
+        "name": "cost_model",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+            "cost model (af_cost_model)",
+            "(af_cost_model)"
+        ]
+    },
+    {
+        "name": "cost",
+        "type": "double",
+        "mandatory": false,
+        "aliases": [
+            "cost (af_cost_value)",
+            "(af_cost_value)"
+        ]
+    },
+    {
+        "name": "cost_currency",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+            "cost currency (af_cost_currency)",
+            "(af_cost_currency)"
+        ]
+    },
+    {
+        "name": "region",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+            "region"
+        ]
+    },
+    {
+        "name": "country_code",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+            "country code"
+        ]
+    },
+    {
+        "name": "state",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+            "state"
+        ]
+    },
+    {
+        "name": "city",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+            "city"
+        ]
+    },
+    {
+        "name": "ip",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+            "ip"
+        ]
+    },
+    {
+        "name": "wifi",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+            "wifi"
+        ]
+    },
+    {
+        "name": "language",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+            "language"
+        ]
+    },
+    {
+        "name": "event_source",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+            "event source"
+        ]
+    },
+    {
+        "name": "appsflyer_device_id",
+        "type": "string",
+        "mandatory": true,
+        "aliases": [
+            "appsflyer device id"
+        ]
+    },
+    {
+        "name": "customer_user_id",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+            "customer user id"
+        ]
+    },
+    {
+        "name": "idfa",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+            "idfa"
+        ]
+    },
+    {
+        "name": "idfv",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+            "idfv"
+        ]
+    },
+    {
+        "name": "mac",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+            "mac"
+        ]
+    },
+    {
+        "name": "device_name",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+            "device name"
+        ]
+    },
+    {
+        "name": "devise_type",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+            "device type"
+        ]
+    },
+    {
+        "name": "os_version",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+            "os version"
+        ]
+    },
+    {
+        "name": "sdk_version",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+            "sdk version"
+        ]
+    },
+    {
+        "name": "app_version",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+            "app version"
+        ]
+    },
+    {
+        "name": "sub_param_1",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+            "sub param 1 (af_sub1)",
+            "af_sub1"
+        ]
+    },
+    {
+        "name": "sub_param_2",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+            "sub param 2 (af_sub2)",
+            "af_sub2"
+        ]
+    },
+    {
+        "name": "sub_param_3",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+            "sub param 3 (af_sub3)",
+            "af_sub3"
+        ]
+    },
+    {
+        "name": "sub_param_4",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+            "sub param 4 (af_sub4)",
+            "af_sub4"
+        ]
+    },
+    {
+        "name": "sub_param_5",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+            "sub param 5 (af_sub5)",
+            "af_sub1"
+        ]
+    },
+    {
+        "name": "impression_url",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+            "impression url"
+        ]
+    },
+    {
+        "name": "click_url",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+            "click url"
+        ]
+    },
+    {
+        "name": "http_referrer",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+            "http referrer"
+        ]
+    },
+    {
+        "name": "contributor_1_media_source",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+            "contributor 1 media source"
+        ]
+    },
+    {
+        "name": "contributor_1_campaign",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+            "contributor 1 campaign"
+        ]
+    },
+    {
+        "name": "contributor_2_media_source",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+            "contributor 2 media source"
+        ]
+    },
+    {
+        "name": "contributor_2_campaign",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+            "contributor 2 campaign"
+        ]
+    },
+    {
+        "name": "contributor_3_media_source",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+            "contributor 3 media source"
+        ]
+    },
+    {
+        "name": "contributor_3_campaign",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+            "contributor 3 campaign"
+        ]
+    },
+    {
+        "name": "reported_platform",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+
+        ]
+    },
+    {
+        "name": "platform_type",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+
+        ]
+    },
+    {
+        "name": "advertiser",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+
+        ]
+    },
+    {
+        "name": "offer_id",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+
+        ]
+    },
+    {
+        "name": "offer_name",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+
+        ]
+    },
+    {
+        "name": "offer_url",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+
+        ]
+    },
+    {
+        "name": "offer_preview_url",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+
+        ]
+    },
+    {
+        "name": "android_id",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+            "android id"
+        ]
+    },
+    {
+        "name": "imei",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+            "imei"
+        ]
+    },
+    {
+        "name": "advertising_id",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+            "advertising id"
+        ]
+    },
+    {
+        "name": "operator",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+            "operator"
+        ]
+    },
+    {
+        "name": "carrier",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+            "carrier"
+        ]
+    },
+    {
+        "name": "installer_package",
+        "type": "string",
+        "mandatory": false,
+        "aliases": [
+            "installer package"
+        ]
+    }
+]

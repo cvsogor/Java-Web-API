@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="page-header">
+        <h1>Commercial #{{commercial.id}} Data</h1>
+    </div>
+    <commercial-details-menu></commercial-details-menu>
+    <div class="page-header">
+        <h3>Events</h3>
+        <table class="table-bordered table">
+            <thead>
+            <tr>
+                <th>Event ID</th>
+                <th>Event Time</th>
+                <th>Cost</th>
+                <th>Revenue</th>
+                <th>Profit</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="event in commercialData">
+                    <td>{{event.id}}</td>
+                    <td>{{event.event_time | date:'yyyy-MM-dd hh:mm:ss':'+0'}}</td>
+                    <td>{{event.real_cost | currency}}</td>
+                    <td>{{event.real_revenue | currency}}</td>
+                    <td>{{(event.real_revenue - event.real_cost) | currency}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

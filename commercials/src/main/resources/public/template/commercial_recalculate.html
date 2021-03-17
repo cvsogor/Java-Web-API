@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="page-header">
+        <h1>Commercial #{{commercial.id}} Recalculating</h1>
+    </div>
+    <commercial-details-menu></commercial-details-menu>
+    <div class="page-header">
+        <h3>Recalculation Tasks</h3>
+    </div>
+    <button href="" class="btn" ng-click="startRecalculation()">Start Recalculation</button>
+    <table class="table-bordered table">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Created On</th>
+            <th>Started On</th>
+            <th>Finished On</th>
+            <th>Status</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="task in tasks">
+            <td>{{task.id}}</td>
+            <td>{{task.createdOn | date:'yyyy-MM-dd hh:mm:ss':'+0'}}</td>
+            <td>{{task.startedOn | date:'yyyy-MM-dd hh:mm:ss':'+0'}}</td>
+            <td>{{task.finishedOn | date:'yyyy-MM-dd hh:mm:ss':'+0'}}</td>
+            <td>{{task.status}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>

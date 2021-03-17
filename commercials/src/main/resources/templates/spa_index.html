@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Commercials Application</title>
+    <link rel="stylesheet" href="/commercials/vendor/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/commercials/vendor/ui-grid.css"/>
+    <link rel="stylesheet" href="/commercials/vendor/jquery-ui.css"/>
+    <script src="/commercials/vendor/angular.js"></script>
+    <script src="/commercials/vendor/angular-ui-bootstrap.js"></script>
+    <script src="/commercials/vendor/angular-ui-router.js"></script>
+    <script src="/commercials/vendor/ui-grid.js"></script>
+    <script src="/commercials/vendor/jquery.js"></script>
+    <script src="/commercials/vendor/jquery-ui.js"></script>
+    <script src="/commercials/app.min.jsx" type="application/javascript"></script>
+</head>
+<body ng-app="commercialsApp">
+    <div class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" ui-sref="list">Commercials</a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a ui-sref="list">List</a>
+                    </li>
+                    <li>
+                        <a ui-sref="create">Create</a>
+                    </li>
+                    <li>
+                        <a ui-sref="recalculate-all">Recalculate All</a>
+                    </li>
+                    <li>
+                        <a href="/appsflyer"><b>Back to Appsflyer Reporter</b></a>
+                    </li>
+                    <li ng-show="user != null">
+                        <a href="#/profile">Logged in as {{user.username}}</a>
+                    </li>
+                    <li ng-show="user != null">
+                        <a href="#/logout">Logout</a>
+                    </li>
+                    <li ng-show="user.role=='ROLE_ADMIN'">
+                        <a ui-sref="user-list"><b>User List</b></a>
+                    </li>
+                    <li ng-show="user.role=='ROLE_ADMIN'">
+                        <a ui-sref="user-create"><b>Create User</b></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="alert alert-danger" ng-show="errorMessage != null">Error occured: {{errorMessage}}</div>
+    <div ui-view="">
+
+    </div>
+</body>
+</html>

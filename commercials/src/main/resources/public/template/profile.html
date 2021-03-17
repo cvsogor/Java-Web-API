@@ -1,0 +1,8 @@
+<div class="container">
+    <div><b>Username:</b> {{user.username}}</div>
+    <ul>
+        <li ng-repeat="permission in user.permissions">
+            {{permission.mediaSource}} + {{permission.offerId}} + {{permission.action}}
+        </li>
+    </ul>
+</div>

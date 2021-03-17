@@ -1,0 +1,79 @@
+<div class="container">
+    <div class="page-header">
+        <h1> Commercial #{{commercial.id}} Details</h1>
+    </div>
+    <commercial-details-menu active="details"></commercial-details-menu>
+    <h3>Main Details</h3>
+    <div class="page-header">
+        <button class="btn-warning btn" ng-click="copyAndClose()">Close and recreate as new commercial</button>
+    </div>
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>Property Name</th>
+            <th>Property Value</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><b>ID</b></td>
+            <td>{{commercial.id}}</td>
+        </tr>
+        <tr>
+            <td><b>Offer ID</b></td>
+            <td>{{commercial.offerId}}</td>
+        </tr>
+        <tr>
+            <td><b>Media Source</b></td>
+            <td>{{commercial.mediaSource}}</td>
+        </tr>
+        <tr>
+            <td><b>Is Active?</b></td>
+            <td>{{commercial.isActive ? 'Yes' : 'No'}}</td>
+        </tr>
+        <tr>
+            <td><b>Start Date</b></td>
+            <td>{{commercial.dateStart | date: 'yyyy-MM-dd'}}</td>
+        </tr>
+        <tr>
+            <td><b>End Date</b></td>
+            <td>{{commercial.dateEnd | date: 'yyyy-MM-dd'}}</td>
+        </tr>
+        <tr>
+            <td><b>Type (Payout or Revenue)</b></td>
+            <td>{{commercial.type}}</td>
+        </tr>
+        <tr>
+            <td><b>Payout/Revenue Amount</b></td>
+            <td>{{commercial.amount | currency}}</td>
+        </tr>
+        <tr>
+            <td><b>Event Type</b></td>
+            <td>{{commercial.eventType}}</td>
+        </tr>
+        <tr>
+            <td><b>Updated On</b></td>
+            <td>{{commercial.updatedOn | date: 'yyyy-MM-dd hh:mm:ss'}}</td>
+        </tr>
+        </tbody>
+    </table>
+    <h3>Conditions</h3>
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>Field Name</th>
+            <th>Operator</th>
+            <th>Field Value</th>
+            <th>Is Inverse</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="condition in commercial.conditions">
+            <td>{{condition.fieldName}}</td>
+            <td>{{condition.operator}}</td>
+            <td>{{condition.fieldValue}}</td>
+            <td>{{condition.isInverse ? 'Yes' : 'No'}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>

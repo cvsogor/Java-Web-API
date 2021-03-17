@@ -1,0 +1,18 @@
+<div class="container">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Username</th>
+                <th>Role</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="existingUser in users">
+                <td><a ui-sref="user-edit({userId: existingUser.id})">{{existingUser.id}}</a></td>
+                <td>{{existingUser.username}}</td>
+                <td>{{existingUser.role}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

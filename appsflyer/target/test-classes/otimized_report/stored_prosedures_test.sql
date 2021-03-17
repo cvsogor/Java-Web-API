@@ -1,0 +1,10 @@
+set @start_date = '2015-12-01';
+set @end_date = '2015-12-31';
+call appsflyer.generate_campaing_report(@start_date, @end_date);
+call appsflyer.generate_country_report(@start_date, @end_date);
+call appsflyer.generate_devise_type_report(@start_date, @end_date);
+call appsflyer.generate_month_report(@start_date, @end_date);
+call appsflyer.generate_offer_report(@start_date, @end_date);
+call appsflyer.generate_os_version_report(@start_date, @end_date);
+call appsflyer.generate_siteid_report(@start_date, @end_date);
+call appsflyer.generate_weekday_report(@start_date, @end_date);

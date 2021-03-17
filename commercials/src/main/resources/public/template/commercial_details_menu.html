@@ -1,0 +1,21 @@
+<ul class="nav nav-pills nav-justified">
+    <li role="presentation" ng-class="{'active':state=='details'}">
+        <a ui-sref="details({commercialId: commercial.id})">Details</a>{{active}}
+    </li>
+    <li role="presentation" ng-class="{'active':state=='edit'}">
+        <a ui-sref="edit({commercialId: commercial.id})">Edit</a>
+    </li>
+    <li role="presentation" ng-class="{'active':state=='data'}">
+        <a ui-sref="data({commercialId: commercial.id})">Data</a>
+    </li>
+    <li role="presentation" ng-class="{'active':state=='recalculate'}">
+        <a ui-sref="recalculate({commercialId: commercial.id})">Recalculate</a>
+    </li>
+    <li role="presentation" ng-class="{'active':state=='change-list'}">
+        <a ui-sref="change-list({commercialId: commercial.id})">History</a>
+    </li>
+    <li role="presentation" ng-class="{'active':state=='delete'}">
+        <a ui-sref="delete({commercialId: commercial.id})">Delete</a>
+    </li>
+
+</ul>

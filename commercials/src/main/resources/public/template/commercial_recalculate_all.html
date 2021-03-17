@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="page-header">
+        <h1>Global Recalculation</h1>
+    </div>
+    <button class="btn-block btn" ng-click="startGlobalRecalculation()">Start Global Recalculation</button>
+    <h3>Currently running tasks:</h3>
+    <table class="table-bordered table">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Created On</th>
+            <th>Started On</th>
+            <th>Finished On</th>
+            <th>Status</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="task in tasks">
+            <td>{{task.id}}</td>
+            <td>{{task.createdOn | date:'yyyy-MM-dd hh:mm:ss':'+0'}}</td>
+            <td>{{task.startedOn | date:'yyyy-MM-dd hh:mm:ss':'+0'}}</td>
+            <td>{{task.finishedOn | date:'yyyy-MM-dd hh:mm:ss':'+0'}}</td>
+            <td>{{task.status}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>

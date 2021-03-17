@@ -1,0 +1,4 @@
+campaign_name,offer_name,Revenue,Cost,impressions,Clicks,CTR,Installs,eCPI,FD_count,FD_amount,deposits_count,deposits_amount,installs/deposit_amount,eCPA,Installs_to_RFD,ARPU,ARPPU,CPC,ROI,CTI,CTD,eCPM
+"Campaign Name 1",q,0,168070,0,0,0,7,24010,7,10900,0,0,0,24010,1.0000,0,0,0,0,0,0,0
+"Campaign Name 2",q,0,129057,0,0,0,6,21509.5,3,6200,0,0,0,43019,2.0000,0,0,0,0,0,0,0
+"Campaign Name 3",q,0,138063,0,0,0,6,23010.5,3,4300,3,4900,0.0012244897959183673,46021,2.0000,0.0012244897959183673,0.0006122448979591836,0,28.17612244897959,0,0,0

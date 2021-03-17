@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="page-header">
+        <h1>Commercial #{{commercial.id}} History</h1>
+    </div>
+    <commercial-details-menu></commercial-details-menu>
+    <div class="page-header">
+        <h3>Change History</h3>
+    </div>
+    <div class="container">
+        <table class="table-bordered table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Date</th>
+                    <th>User</th>
+                    <th>Field</th>
+                    <th>Previous Value</th>
+                    <th>New Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="logEntry in changeLogs">
+                    <td>{{logEntry.id}}</td>
+                    <td>{{logEntry.createdAt | date: 'yyyy-MM-dd hh:mm:ss'}}</td>
+                    <td>{{logEntry.createdBy}}</td>
+                    <td>{{logEntry.field}}</td>
+                    <td>{{logEntry.oldValue == '' ? 'NULL' : logEntry.oldValue}}</td>
+                    <td>{{logEntry.newValue == '' ? 'NULL' : logEntry.newValue}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
